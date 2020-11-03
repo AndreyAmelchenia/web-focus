@@ -3,11 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner&family=Lato&family=Source+Sans+Pro&display=swap");
 body {
   font-family: "Lato", sans-serif;
+  background-color: #dfdfdf;
 }
 
 .container {
   max-width: 1920px;
   background: #F2F2F2;
+}
+.container > hr {
+  width: 100%;
+  margin: 0;
 }
 
 .row {
@@ -71,6 +76,7 @@ h1, .h2, h3, .h4, .h5 {
   line-height: 30px;
 }
 
+.collaboration__form > input::placeholder,
 .main_text {
   display: flex;
   flex-direction: column;
@@ -117,6 +123,49 @@ h1, .h2, h3, .h4, .h5 {
   line-height: 30px;
   letter-spacing: 0.01em;
   color: rgba(0, 0, 0, 0.75);
+}
+
+.subtitle_2 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.caption {
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.additional_text {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0;
+  margin: 0;
+}
+
+.email {
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .header {
@@ -459,6 +508,13 @@ h1, .h2, h3, .h4, .h5 {
 .triangle {
   margin-top: 80px;
   margin-bottom: 100px;
+  position: relative;
+}
+.triangle__coner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
 .triangle__content {
   width: 100%;
@@ -585,6 +641,222 @@ h1, .h2, h3, .h4, .h5 {
   margin-right: 30px;
 }
 
+.advantages {
+  margin-top: 80px;
+  height: 610px;
+}
+.advantages__cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.advantages__card {
+  width: 270px;
+  height: 335px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+.advantages__content {
+  margin: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages__content > .ellipse {
+  margin-bottom: 25px;
+}
+.advantages__footer {
+  position: relative;
+  width: 1170px;
+  height: 160px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+.advantages__footer > p {
+  margin: 40px 370px 45px 50px;
+}
+.advantages__coner {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.collaboration {
+  height: 365px;
+  justify-content: space-between;
+}
+.collaboration__content {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.collaboration__list {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.collaboration__item {
+  display: flex;
+}
+.collaboration__item > img {
+  margin-right: 30px;
+}
+.collaboration__form {
+  width: 570px;
+  height: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  padding: 40px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.collaboration__form > hr {
+  width: 100%;
+  margin-top: 0rem;
+}
+.collaboration__form > input {
+  border: none;
+}
+.collaboration__form > button {
+  width: 100%;
+}
+.collaboration__label_name {
+  font-family: "Commissioner", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+.collaboration__label_phone {
+  font-family: "Commissioner", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+.collaboration_text {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.collaboration_text > a > span {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+
+.cost {
+  margin-bottom: 100px;
+  width: 670px;
+  height: 220px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer {
+  margin-bottom: 0;
+  height: 650px;
+  justify-content: space-between;
+}
+.footer__block_1 {
+  width: 270px;
+  height: 410px;
+}
+.footer__block_1 > h5 {
+  margin-bottom: 70px;
+}
+.footer__social-network {
+  margin-top: 60px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__social-network > img {
+  cursor: pointer;
+}
+.footer__block_2 {
+  width: 670px;
+  height: 505px;
+  margin-top: 35px;
+}
+.footer__block_2 > hr {
+  width: 100%;
+  margin-top: 0;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 450px;
+}
+.footer__contact {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.footer__contact > h2 {
+  font-family: "Commissioner", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 15px;
+  padding: 0;
+}
+.footer__h {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer__block_3 {
+  width: 170px;
+  height: 335px;
+  margin-top: 35px;
+}
+.footer__block_3 > hr {
+  width: 100%;
+  margin-top: 0;
+}
+
+.development {
+  height: 55px;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.development > p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0;
+  margin: 0;
+}
+
 .button-filled {
   width: 200px;
   height: 45px;
@@ -616,10 +888,34 @@ h1, .h2, h3, .h4, .h5 {
   order: 0;
   display: flex;
   text-align: center;
-  margin: 0px 0px;
+  margin: 0;
   border: none;
   background: none;
   padding: 0;
+}
+
+.button-additional {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.75);
+  margin: 0;
+  border: none;
+  background: none;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.button-additional > img {
+  margin-left: 15px;
 }
 
 .ellipse {

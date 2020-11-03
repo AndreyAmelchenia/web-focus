@@ -1,8 +1,15 @@
 .triangle{
   margin-top: 80px;
   margin-bottom: 100px;
-  
+  position: relative;
+  &__coner{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
   &__content{
+    
     width: 100%;
     display: flex;
     flex-wrap: wrap;

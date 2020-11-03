@@ -29,8 +29,31 @@
   order: 0;
   display: flex;
   text-align: center;
-  margin: 0px 0px;
+  margin: 0;
   border: none;
   background: none;
   padding: 0;
+}
+.button-additional{
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.75);
+  margin: 0;
+  border: none;
+  background: none;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  > img{
+    margin-left: 15px;
+  }
 }

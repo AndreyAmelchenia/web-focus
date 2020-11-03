@@ -4,10 +4,15 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  background-color: #dfdfdf;
 }
 .container{
   max-width: 1920px;
   background: #F2F2F2;
+  > hr{
+    width: 100%;
+    margin: 0;
+  }
 }
 .row{
   margin: 50px 375px;

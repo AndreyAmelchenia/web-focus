@@ -1,0 +1,20 @@
+{
+  "name": "web-focus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch ./sass/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyAmelchenia/web-focus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreyAmelchenia/web-focus/issues"
+  },
+  "homepage": "https://github.com/AndreyAmelchenia/web-focus#readme"
+}

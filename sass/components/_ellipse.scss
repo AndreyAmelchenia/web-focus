@@ -1,0 +1,20 @@
+.ellipse{
+  border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  &_2{
+    width: 120px;
+    height: 120px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+  }
+  &_6{
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.1);  
+  }
+}
+
+
+

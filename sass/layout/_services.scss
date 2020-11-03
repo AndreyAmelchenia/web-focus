@@ -1,0 +1,59 @@
+.services{
+  height: 1070px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  flex-direction: column;
+  justify-content: space-between;
+  &__content{
+    height: 820px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  &__card{
+    width: 570px;
+    height: 140px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    &_short{
+      width: 470px;
+    }
+    &_long{
+      width: 670px;
+    }
+  }
+  &__rectangle{
+    width: 70px;
+    height: 100%;
+    background: #DEC377;
+    &_75{
+      background: rgba(222, 195, 119, 0.75);
+    }
+    &_40{
+      background: rgba(222, 195, 119, 0.4);
+    }
+  }
+  &__text{
+    width: calc(100% - 130px);
+    margin: 25px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    > h5{
+      width: calc(100% - 60px);
+      margin-right: 60px;
+    }
+  }
+  &__footer{
+    display: flex;
+    justify-content: space-between;
+    > p{
+      width: 769px;
+      height: 125px;
+    }
+  }
+}

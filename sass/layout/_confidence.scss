@@ -1,25 +1,43 @@
 .confidence{
-  margin-top: 80px;
-  margin-bottom: 100px;
-  height: 610px;
+  margin-top: calc(80 / 1920 * 100vw);
+  margin-bottom: calc(100 / 1920 * 100vw);
+  min-height: calc(610 / 1920 * 100vw);
   justify-content: space-between;
   > hr {
     width: 100%;
   }
   &__block{
-    width: 1059px;
-    height: 255px;
+    width: calc(1059 / 1920 * 100vw);
+    @include media-xl{
+      width: calc(1410 / 1920 * 100vw);
+    }
+    @include media-xl{
+      flex-wrap: wrap;
+    }
+    min-height: calc(255 / 1920 * 100vw);
     display: flex;
     justify-content: space-between;
   }
   &__text{
-    margin-top: 10px;
-    width: 470px;
-    height: 170px;
+    margin-top: calc(10 / 1920 * 100vw);
+    width: calc(470 / 1920 * 100vw);
+    @include media-xl{
+      width: calc(700 / 1920 * 100vw);
+    }
+    @include media-xl{
+      width: 100%;
+    }
+    min-height: calc(170 / 1920 * 100vw);
   }
   &__list{
-    width: 440px;
-    height: 225px;
+    width: calc(440 / 1920 * 100vw);
+    @include media-xl{
+      width: calc(670 / 1920 * 100vw);
+    }
+    @include media-xl{
+      width: 100%;
+    }
+    min-height: calc(225 / 1920 * 100vw);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,7 +48,7 @@
     list-style: none;
     display: flex;
     > img{
-      margin-right: 30px;
+      margin-right: calc(30 / 1920 * 100vw);
     }
   }
 }

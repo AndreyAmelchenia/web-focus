@@ -8,7 +8,6 @@ body{
 }
 .container{
   max-width: 1920px;
-  width: 1920px;
   background: #F2F2F2;
   > hr{
     width: 100%;
@@ -16,7 +15,10 @@ body{
   }
 }
 .row{
-  margin: 50px 375px;
+  margin: calc(50 / 1920 * 100% ) calc(375 / 1920 * 100% );
+  @include media-xl{
+    margin: calc(50 / 1920 * 100% ) calc(200 / 1920 * 100% );
+  }
 }
 .col{
   padding: 0;

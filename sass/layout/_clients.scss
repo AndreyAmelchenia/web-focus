@@ -1,25 +1,29 @@
 .clients{
-  margin-bottom: 100px;
+  margin-bottom: calc(100 / 1920 * 100vw);
   &__content{
     display: flex;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: calc(40 / 1920 * 100vw);
     > p{
-      width: 670px;
+      width: calc(670 / 1920 * 100vw);
     }
     > button{
       background: #FFFFFF;
       color: #DEC377;
       border: 2px solid #DEC377;
-      margin-left: 100px;
+      margin-left: calc(100 / 1920 * 100vw);
     }
   }
   &__icons{
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
+    @include media-lg{
+      justify-content: space-between;
+    }
     > img{
-      margin-left: 60px;
+      margin-left: calc(40 / 1920 * 100vw);
       color: grey;
     }
   }

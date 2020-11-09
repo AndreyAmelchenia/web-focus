@@ -1,16 +1,31 @@
 .directions-principles{
-  margin: 50px 275px -110px 275px;
+  margin: calc(50 / 1920 * 100vw) calc(375 / 1920 * 100vw - 100px) calc(-110 / 1920 * 100vw) calc(375 / 1920 * 100vw - 100px);
+  @include media-xl{
+    margin: calc(50 / 1920 * 100vw) calc(200 / 1920 * 100vw - 100px) calc(-110 / 1920 * 100vw) calc(200 / 1920 * 100vw - 100px);
+  }
+  @include media-md{
+    margin: calc(50 / 1920 * 100vw) calc(200 / 1920 * 100vw - 50px) calc(-110 / 1920 * 100vw) calc(200 / 1920 * 100vw - 50px);
+  }
   &__content{
     display: flex;
-    margin: 0 100px 60px 100px;
+    margin: 0 100px calc(60 / 1920 * 100vw) 100px;
+    @include media-md{
+      margin: 0 50px calc(60 / 1920 * 100vw) 50px;
+    }
     justify-content: space-between;
     > h2{
-      width: 370px;
-      height: 80px;
+      width: calc(370 / 1920 * 100vw);
+      min-height: calc(80 / 1920 * 100vw);
+      @include media-xl{
+        width: calc(500 / 1920 * 100vw);
+      }
     }
     > p{
-      width: 770px;
-      height: 200px;
+      width: calc(770 / 1920 * 100vw);
+      min-height: calc(200 / 1920 * 100vw);
+      @include media-xl{
+        width: calc(1000 / 1920 * 100vw);
+      }
     }
   }
   &__slider{
@@ -19,6 +34,10 @@
     > button{
       width: 100px;
       height: 100px;
+      @include media-md{
+        height: 50px;
+        width: 50px;
+      }
       border: none;
       display: flex;
       justify-content: center;
@@ -27,17 +46,28 @@
     }
   }
   &__slide{
-    height: 560px;
-    width: 1170px;
+    height: calc(560 / 1920 * 100vw);
+    width: calc(1170 / 1920 * 100vw);
+    @include media-xl{
+      height: calc(560 * 1520 / 1170 / 1920 * 100vw);
+      width: calc(1520 / 1920 * 100vw);
+    }
     background: white;
     overflow: hidden;
     position: relative;
   }
   &__slides{
-    height: 560px;
+    height: calc(560 / 1920 * 100vw);
     display: flex;
     position: absolute;
     left: 0px;
     top: 0px;
+    > img {
+      width: calc(1170 / 1920 * 100vw);
+      @include media-xl{
+        height: calc(560 * 1520 / 1170 / 1920 * 100vw);
+        width: calc(1520 / 1920 * 100vw);
+      }
+    }
   }
 }

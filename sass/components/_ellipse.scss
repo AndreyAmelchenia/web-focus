@@ -5,14 +5,23 @@
     justify-content: center;
     align-items: center;
   &_2{
-    width: 120px;
-    height: 120px;
+    width: calc(120 / 1920 * 100vw);
+    height: calc(120 / 1920 * 100vw);
     border: 3px solid rgba(0, 0, 0, 0.1);
+    @include media-lg{
+      width: 120px;
+      height: 120px;
+    }
   }
   &_6{
-    width: 80px;
-    height: 80px;
-    border: 1px solid rgba(0, 0, 0, 0.1);  
+    width: calc(60 / 1920 * 100vw);
+    height: calc(60 / 1920 * 100vw);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+    > img{
+      width: calc(40 / 1920 * 100vw);
+    height: calc(40 / 1920 * 100vw);
+    } 
   }
 }
 

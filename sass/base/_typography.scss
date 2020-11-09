@@ -19,12 +19,44 @@ h1, .h2, h3, .h4, .h5{
 font-size: 40px;
 line-height: 50px;
 letter-spacing: 0.01em;
+  @include media-xl{
+    font-size: 35px;
+    line-height: 35px;
+  }
+  @include media-lg{
+    font-size: 30px;
+    line-height: 30px;
+  }
+  @include media-md{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  @include media-sm{
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 
 .h2{
   font-size: 28px;
   line-height: 40px;
   letter-spacing: 0.03em;
+  @include media-xl{
+    font-size: 30px;
+    line-height: 35px;
+  }
+  @include media-lg{
+    font-size: 25px;
+    line-height: 30px;
+  }
+  @include media-md{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  @include media-sm{
+    font-size: 15px;
+    line-height: 20px;
+  }
   
 }
 .h3{
@@ -38,11 +70,43 @@ letter-spacing: 0.01em;
 .h4{
   font-size: 26px;
   line-height: 45px;
+  @include media-xl{
+    font-size: 23px;
+    line-height: 25px;
+  }
+  @include media-lg{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  @include media-md{
+    font-size: 17px;
+    line-height: 15px;
+  }
+  @include media-sm{
+    font-size: 15px;
+    line-height: 15px;
+  }
 }
 
 .h5{
   font-size: 20px;
   line-height: 30px;
+  @include media-xl{
+    font-size: 17px;
+    line-height: 25px;
+  }
+  @include media-lg{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  @include media-md{
+    font-size: 13px;
+    line-height: 15px;
+  }
+  @include media-sm{
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 .collaboration__form > input::placeholder,
 .main_text{
@@ -54,6 +118,21 @@ letter-spacing: 0.01em;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
+  @include media-xl{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @include media-lg{
+    font-size: 13px;
+    line-height: 15px;
+  }
+  @include media-md{
+    font-size: 12px;
+
+  }
+  @include media-sm{
+    font-size: 11px;
+  }
 }
 
 .secondary_text{
@@ -100,6 +179,21 @@ letter-spacing: 0.01em;
   text-align: center;
   letter-spacing: 0.02em;
   color: rgba(0, 0, 0, 0.75);
+  @include media-xl{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @include media-lg{
+    font-size: 13px;
+    line-height: 15px;
+  }
+  @include media-md{
+    font-size: 12px;
+
+  }
+  @include media-sm{
+    font-size: 11px;
+  }
 }
 .caption{
   font-family: 'Commissioner', sans-serif;

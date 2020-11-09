@@ -1,17 +1,26 @@
 .footer{
   margin-bottom: 0;
-  height: 650px;
+  min-height: calc(650 / 1920 * 100vw);
   justify-content: space-between;
+  @include media-xl{
+    justify-content: flex-start;
+  }
   &__block_1{
-    width: 270px;
-    height: 410px;
-    > h5{
-      margin-bottom: 70px;
+    width: calc(270 / 1920 * 100vw);
+    min-height: calc(410 / 1920 * 100vw);
+    @include media-xl{
+      min-width: calc(270 / 1920 * 100vw);
+      order: 1;
+      width: auto;
     }
+    > h5{
+      margin-bottom: calc(70 / 1920 * 100vw);
+    }
+   
   }
   &__social-network{
-    margin-top: 60px;
-    margin-bottom: 35px;
+    margin-top: calc(60 / 1920 * 100vw);
+    margin-bottom: calc(35 / 1920 * 100vw);
     display: flex;
     justify-content: space-between;
     > img{
@@ -20,8 +29,12 @@
   }
   &__block_2{
     width: 670px;
-    height: 505px;
-    margin-top: 35px;
+    @include media-xl{
+      order: 3;
+    }
+    
+    min-height: calc(505 / 1920 * 100vw);
+    margin-top: calc(35 / 1920 * 100vw);
     > hr{
       width: 100%;
       margin-top: 0;
@@ -31,7 +44,10 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 450px;
+    height: 460px;
+    @include media-xl{
+      height: 690px;
+    }
   }
   &__contact{
     width: 200px;
@@ -58,11 +74,17 @@
     color: rgba(0, 0, 0, 0.5);
   }
   &__block_3{
-    width: 170px;
-    height: 335px;
-    margin-top: 35px;
+    width: calc(170 / 1920 * 100vw);
+    min-height: calc(335 / 1920 * 100vw);
+    margin-top: calc(35 / 1920 * 100vw);
+    @include media-xl{
+    min-width: calc(170 / 1920 * 100vw);
+    width: auto;
+      order: 2;
+    }
     > hr{
       width: 100%;
+      
       margin-top: 0;
     }
   }

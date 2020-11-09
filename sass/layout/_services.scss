@@ -1,33 +1,42 @@
 .services{
-  height: 1070px;
-  margin-top: 80px;
-  margin-bottom: 100px;
+  min-height: calc(1070 / 1920 * 100vw);
+  margin-top: calc(80 / 1920 * 100vw);
+  margin-bottom: calc(70 / 1920 * 100vw);
   flex-direction: column;
   justify-content: space-between;
   &__content{
-    height: 820px;
+    min-height: calc(820 / 1920 * 100vw);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
   }
   &__card{
-    width: 570px;
-    height: 140px;
+    width: calc(570 / 1920 * 100vw);
+    @include media-xl{
+      width: calc(745 / 1920 * 100vw);
+    }
+    min-height: calc(140 / 1920 * 100vw);
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
     display: flex;
-    justify-content: space-between;
+    margin-bottom: calc(30 / 1920 * 100vw);
     &_short{
-      width: 470px;
+      width: calc(470 / 1920 * 100vw);
+      @include media-xl{
+        width: calc(645 / 1920 * 100vw);
+      }
     }
     &_long{
-      width: 670px;
+      width: calc(670 / 1920 * 100vw);
+      @include media-xl{
+        width: calc(845 / 1920 * 100vw);
+      }
     }
   }
   &__rectangle{
-    width: 70px;
-    height: 100%;
+    width: calc(70 / 1920 * 100vw);
+    min-height: 100%;
     background: #DEC377;
     &_75{
       background: rgba(222, 195, 119, 0.75);
@@ -37,23 +46,32 @@
     }
   }
   &__text{
-    width: calc(100% - 130px);
-    margin: 25px 30px 20px 30px;
+    width: calc(100% - 130 / 1920 * 100vw);
+    margin: calc(25 / 1920 * 100vw) calc(30 / 1920 * 100vw) calc(20 / 1920 * 100vw) calc(30 / 1920 * 100vw);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
     > h5{
-      width: calc(100% - 60px);
-      margin-right: 60px;
+      width: calc(100% - 60 / 1920 * 100vw);
+      margin-right: calc(60 / 1920 * 100vw);
     }
   }
   &__footer{
     display: flex;
     justify-content: space-between;
+    @include media-lg{
+      flex-wrap: wrap;
+    }
     > p{
-      width: 769px;
-      height: 125px;
+      width: calc(769 / 1920 * 100vw);
+      @include media-xl{
+        width: calc(1000 / 1920 * 100vw);
+      }
+      @include media-lg{
+        width: 100%;
+      }
+      min-height: calc(125 / 1920 * 100vw);
     }
   }
 }

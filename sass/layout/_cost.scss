@@ -1,7 +1,13 @@
 .cost{
-  margin-bottom: 100px;
-  width: 670px;
-  height: 220px;
+  margin-bottom: calc(100 / 1920 * 100vw);
+  width: calc(670 / 1920 * 100vw);
+  @include media-xl{
+    width: calc(1100 / 1920 * 100vw);
+  }
+  @include media-lg{
+    width: calc(1520 / 1920 * 100vw);
+  }
+  min-height: calc(220 / 1920 * 100vw);
   flex-direction: column;
   justify-content: space-between;
 }

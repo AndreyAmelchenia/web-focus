@@ -1,9 +1,19 @@
 .advantage{
-  margin-top: -90px;
+  margin-top: -4.688vw;
   z-index: 1;
+  @include media-lg{
+    flex-wrap: wrap;
+  }
   &__card{
-    width: 270px;
-    height: 285px;
+    width: calc(270 / 1920 * 100vw);
+    min-height: calc(285 / 1920 * 100vw);
+    margin-bottom: calc(20 / 1920 * 100vw);
+    @include media-xl{
+      width: calc(357.5 / 1920 * 100vw);
+    }
+    @include media-lg{
+      width: calc(745 / 1920 * 100vw);
+    }
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
     display: flex;
@@ -11,15 +21,38 @@
     align-items: center;
    
     > div{
-      width: 230px;
-      height: 130px;
+      width: calc(230 / 1920 * 100vw);
+      min-height: calc(130 / 1920 * 100vw);
+      @include media-xl{
+        width: 100%;
+      }
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      margin: 40px 20px 25px 20px;
+      margin: calc(40 / 1920 * 100vw) calc(20 / 1920 * 100vw) calc(25 / 1920 * 100vw) calc(20 / 1920 * 100vw);
+      > div > img{
+        width: calc(60 / 1920 * 100vw);
+        height: calc(60 / 1920 * 100vw);
+        @include media-lg{
+          width: 60px;
+          height: 60px;
+        }
+      }
     }
     > h6{
       text-align: center;
+      @include media-xl{
+        font-size: 0.9rem;
+      }
+      @include media-lg{
+        font-size: 0.8rem;
+      }
+      @include media-md{
+        font-size: 0.7rem;
+      }
+      @include media-sm{
+        font-size: 0.6rem;
+      }
     }
   }
 }

@@ -1,35 +1,45 @@
 .advantages{
-  margin-top: 80px;
-  height: 610px;
+  margin-top: calc(80 / 1920 * 100vw);
+  min-height: calc(610 / 1920 * 100vw);
   &__cards{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @include media-lg{
+      flex-wrap: wrap;
+    }
   }
   &__card{
-    width: 270px;
-    height: 335px;
+    width: calc(270 / 1920 * 100vw);
+    @include media-xl{
+      width: calc(357.5 / 1920 * 100vw);
+    }
+    @include media-lg{
+      width: calc(745 / 1920 * 100vw);
+    }
+    min-height: calc(335 / 1920 * 100vw);
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
+    margin-bottom: calc(20 / 1920 * 100vw);
   }
   &__content{
-    margin: 40px 20px;
+    margin: calc(40 / 1920 * 100vw) calc(20 / 1920 * 100vw);
     display: flex;
     flex-direction: column;
     align-items: center;
     > .ellipse{
-      margin-bottom: 25px;
+      margin-bottom: calc(25 / 1920 * 100vw);
     }
   }
   &__footer{
     position: relative;
-    width: 1170px;
-    height: 160px;
+    width: 100%;
+    min-height: calc(160 / 1920 * 100vw);
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
     > p{
-      margin: 40px 370px 45px 50px;
+      margin: calc(40 / 1920 * 100vw) calc(370 / 1920 * 100vw) calc(45 / 1920 * 100vw) calc(50 / 1920 * 100vw);
     }
   }
   &__coner{
